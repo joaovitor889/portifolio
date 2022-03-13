@@ -23,11 +23,13 @@ body {
 }
 
 h1 {
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
 h2 {
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
@@ -35,6 +37,7 @@ h2 {
 .social-midia {
     margin-top: 1rem;
     display: flex;
+
 }
 
 .social-midia a{
@@ -90,7 +93,7 @@ a:hover {
 
 .checkbox .trace{
     width: 50px;
-    height: 2px;
+    height: 3px;
     background-color: white;
     position: absolute;
     border-radius: 4px;
@@ -225,6 +228,7 @@ a:hover {
     color: white;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 8px;
 }
 
 .card-text {
@@ -284,4 +288,51 @@ a:hover {
     font-size: 14px;
     visibility: visible;
     opacity: 1;
+}
+/* Roda-pé */
+.footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05595B;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+    .social-midia{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        margin-top: 0;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .container .card-container:nth-child(1),
+    .container .card-container:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    .card{
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-text{
+        width: 90%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .card:hover > .card-wrapper::before{
+        height: 190px;
+        width: 190px;
+    }
 }
