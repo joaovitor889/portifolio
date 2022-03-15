@@ -45,7 +45,7 @@ h2 {
     color: white;
     font-size: 24px;
     padding: 1rem 4rem;
-    border: 1px solid white;
+    border: 2px solid white;
     min-width: 4rem;
     display: flex;
     justify-content: center;
@@ -217,7 +217,6 @@ a:hover {
     height: 300px;
     width: 400px;
     margin: 3rem 0 0 0;
-    background-image: url('https://i.pinimg.com/564x/27/34/42/273442530c842e92e055b6389e02060d.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,6 +228,9 @@ a:hover {
     cursor: pointer;
     transition: 0.3s;
     border-radius: 8px;
+}
+.card-1 {
+    background-image: url('https://i.pinimg.com/564x/27/34/42/273442530c842e92e055b6389e02060d.jpg');
 }
 
 .card-text {
@@ -289,6 +291,20 @@ a:hover {
     visibility: visible;
     opacity: 1;
 }
+
+.card-2 {
+
+    background-image: url('https://i.pinimg.com/564x/a1/f3/ea/a1f3eaa75d4cdc0b411d82899ae83048.jpg');
+
+}
+
+
+.card-3 {
+    background-image: url('https://i.pinimg.com/564x/b1/46/84/b146841ae8431754f04f60946f7d0e7e.jpg');
+}
+
+
+
 /* Roda-pé */
 .footer{
     height: 100px;
@@ -297,6 +313,16 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-color: #05595B;
+    flex-direction: column;
+}
+
+.footer p{
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+.footer h2{
+    margin: 0;
 }
 
 /* Responsividade */
